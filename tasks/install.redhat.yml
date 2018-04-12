@@ -2,6 +2,6 @@
 
 - name: install Grafana package
   yum:
-    name: https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-5.0.4-1.x86_64.rpm
+    name: '{{grafana_rpm_url}}'
     state: present
 
